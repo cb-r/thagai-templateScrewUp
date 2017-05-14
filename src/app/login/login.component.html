@@ -1,0 +1,76 @@
+<div id="loginPage">
+  <div id="login" >
+    <div *ngIf="loginVisible">
+    <form name="form-login" >
+      <span class="fontawesome-user"></span>
+      <input type="text" id="user" placeholder="Username">
+      <br/>
+      <span class="fontawesome-lock"></span>
+      <input type="password" id="pass" placeholder="Password">
+      
+      <input type="submit" value="Login">
+
+
+
+
+      <!--<div class="text-center center-block">
+          <br/>
+          
+          
+          <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+          <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+          <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+        </div>
+      -->
+
+    </form>
+    </div>
+
+  <form name="forgot-password">
+    <div id="userEmailDiv" *ngIf="emailVisble">
+    <span class="fa fa-envelope-o fa-fw" aria-hidden="true"></span>
+      <input type="text" id="userEmail" placeholder="Please enter your email address">
+    </div>
+
+
+
+
+     <div class="[ col-xs-12 col-sm-6 ]">
+        <h3>Standard Checkboxes</h3><hr />
+        <div class="[ form-group ]">
+            <input type="checkbox" name="fancy-checkbox-default" id="fancy-checkbox-default" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="fancy-checkbox-default" class="[ btn btn-default ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+                </label>
+                <label for="fancy-checkbox-default" class="[ btn btn-default active ]">
+                    Default Checkbox
+                </label>
+            </div>
+        </div>
+     </div>
+
+
+      <button (click)="onForgotClick($event)" id="forgotPasswordButton">{{forgotPasswordText}}</button>
+
+
+
+
+      <!--<div class="text-center center-block">
+          <br/>
+          
+          
+          <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+          <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+          <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+        </div>
+      -->
+
+    </form>
+
+
+  </div>
+
+
+</div>
